@@ -1,0 +1,203 @@
+#watermark, #banner {
+    display:none;
+}
+@media print {
+    .grid-pagina {
+        display: block;
+    }
+    .grid-pagina section {
+        border: none;
+    }
+    .grid-pagina>div {
+        border: none;
+    }
+    #link-top {
+        display: none;
+    }
+    a {
+        text-decoration: none;
+        color: var(--negru);
+    }
+    img, figure, video, .iframe, .flex-box,.triunghiulet,.triunghiulet-link.promotie,.wrapper{
+        display: none;
+    }
+
+
+    header{
+        box-shadow: none;
+        border-bottom:none;
+    }
+    nav {
+        page-break-after: always;
+        position: relative;
+    }
+    nav ul.meniu>li {
+        float: none;
+        margin-left: 15%;
+        width: 10%;
+        list-style-type: disc;
+        text-align: left;
+    }
+    nav ul.meniu li a, nav ul.meniu li div {
+        outline: none;
+        color: var(--negru);
+    }
+    nav ul.meniu>li ul{
+        display: none;
+    }
+    footer {
+        page-break-before: always;
+        box-shadow: none;
+        border-top:none;
+    }
+    ins {
+        color: var(--negru);
+    }
+    h1{
+        text-align:center;
+        margin-left:1cm;
+    }
+    
+    #banner {
+        display: block;
+        position: absolute;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        border: var(--negru) inset 4px;
+        bottom: 0;
+        text-align: center;
+    }
+    #watermark
+		{	
+			display: block;
+			position: fixed;/*apare pe toate paginile*/
+			bottom:0;
+			color:rgb(0, 0, 0);
+			right:0;
+		}
+    
+    #watermark::after{
+			
+			opacity:0.4;
+			padding:5px;
+            text-align: center;
+            font-weight: bold;
+			display: block;
+            width: 4cm;
+            height: 1cm;
+			background: white;
+			border:3px solid black;
+			border-radius:10px;
+			content:"Ana-Maria Puscasu";
+}
+ 
+@page {
+    size: A4 portrait;
+}
+@page:left {
+    margin-left: 3cm;
+    margin-right: 1cm;
+}
+@page:right {
+    margin-right: 3cm;
+    margin-left: 1cm;
+}
+
+#caption{
+    font-weight: normal;
+    color:var(--negru);
+}
+table {
+   
+    border: 3px solid black;}
+   
+
+
+th, td {
+    
+    border: 3px solid black;
+    
+}
+
+.container table tr:nth-child(even) td {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+
+.container table tr:nth-child(odd) td {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+
+*{ font-weight:normal;
+border-color:var(--negru);
+color: var(--negru);
+}
+}
+/*@media print {
+
+	#banner{
+		position: absolute;
+		display: inline-block;
+		text-align: center;
+		top:100%;
+		width:70%;
+		height:20px;
+		right:0;
+		overflow: visible;
+        border: 4px inset black;
+	}
+
+    img, iframe, .iframe-button,.responsive-iframe,.flex-box, .container-iframe, .taburi-iframe, figcaption, video, #link-top{
+        display: none;
+    }
+    #grid-pagina{
+        display: block;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    h1{
+		margin-left: 50%;
+		text-align:center;
+		margin-left:0cm;
+	}
+    ul.meniu{
+        display: block;
+        page-break-after: always;
+    }
+
+    footer{
+        page-break-before: always;
+    }
+
+    .submenu{
+        display: none;
+    }
+
+    	
+	#watermark
+		{	
+			display: block;
+			position: fixed;/*apare pe toate paginile
+			bottom:0;
+			color:rgb(0, 0, 0);
+			right:0;
+		}
+    #watermark::after{
+			
+			opacity:0.4;
+			padding:5px;
+            text-align: center;
+            font-weight: bold;
+			display: block;
+            width: 4cm;
+            height: 1cm;
+			background: white;
+			border:3px solid black;
+			border-radius:10px;
+			content:"Ana-Maria Puscasu";
+}
+}

@@ -1,0 +1,27 @@
+
+.container {
+    overflow-x: auto;
+  }
+  
+  html {
+    font-size: 10px;
+}
+.grid-pagina {
+    display: block;
+    grid-gap: var(--grid-gap-mobile);
+}
+.iframe-button {
+    width: 50px;
+}
+
+#element {
+
+    animation:  none;
+}
+
+
+body {
+    padding: 0 var(--padding-mobile);
+    margin: var(--margin-mobile);
+  }
+

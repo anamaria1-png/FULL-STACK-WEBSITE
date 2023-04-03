@@ -1,0 +1,49 @@
+/* Stilizare text VTT */
+::cue {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #333; /* culoare închisă, conform schemei cromatice */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Stilizare text VTT la secunda 0 */
+  ::cue:first-of-type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Stilizare poster video */
+  video {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1000px;
+  }
+  
+  /* Elemente de control afișate implicit */
+  video::-webkit-media-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  video::-webkit-media-controls-play-button {
+    display: none;
+  }
+  
+  video::-webkit-media-controls-timeline {
+    flex-grow: 1;
+  }
+  
+  video::-webkit-media-controls-volume-slider-container {
+    width: 70px;
+    margin-right: 10px;
+  }
+  
+  /* Setare preîncărcare */
+  video {
+    preload: auto;
+  }
+  

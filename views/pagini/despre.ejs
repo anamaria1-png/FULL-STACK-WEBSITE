@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <title>Magazinul "Cartulia"</title>
+        <meta name="keywords" content="carti, rechizite, penare, ghiozdane, dosare, instrumente de scris, birotica,lei">
+        <meta name="description" content="Magazin de carti, rechizite, birotica si papetarie online">
+        <title>Magazinul online "Cartulia"</title>
+        <%- include("../fragmente/head.ejs")  %>
+    </head>
+    <body>
+    <%- include("../fragmente/header.ejs")  %>
+    <%-include("../fragmente/printare.ejs");%>
+        <%-include("../fragmente/nav.ejs");%>
+    <main>
+        <aside>
+            <p>La noi veti gasi o gama larga de carti, rechizite si papetarie.</p>
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./Resurse/Imagini/index3.jpg" id="img">
+                    <source media="(max-width: 1000px)" srcset="./Resurse/Imagini/index2.jpg" id="img">
+                    <img src="./Resurse/Imagini/index.jpg" id="img" alt="imagine-sigla" title="Poarta catre libraria noastra!">
+                </picture>
+                <figcaption>Universul produselor noastre!</figcaption>
+            </figure>
+            <a href="./resurse/imagini/index3.jpg" class="link" download>Click aici pentru o cartulie!</a>
+            <video id="video-vtt"controls poster="calea/imagini/index3.jpg"  preload="auto">
+                <source src="/resurse/videouri/librarie.mp4" type="video/mp4">
+                <source src="/resurse/videouri/librarie.ogv" type="video/ogv">
+                <track default src="/resure/videouri/tracks/sub_ro.vtt.txt" kind="captions" srclang="ro" label="romana"/>
+                <track src="/resurse/videouri/tracks/sub_eng.vtt" kind="captions" srclang="en" label="engleza"/>
+            </video>
+            <!--<video id="video-vtt" controls preload="metadata" poster="calea/imagini/index3.jpg" style="width: 100%; min-width: 320px; max-width: 640px;">
+                <source src="/resurse/videouri/librarie.mp4" type="video/mp4">
+                <source src="/resurse/videouri/librarie.ogv" type="video/ogv">
+                Your browser does not support the video tag.
+                <track default label="Română" kind="subtitles" srclang="ro" src="/resure/videouri/tracks/sub_ro.vtt" >
+                <track label="English" kind="subtitles" srclang="en" src="/resurse/videouri/tracks/sub_eng.vtt.txt">
+              </video>-->
+             
+        </aside>
+    </main>
+
+    <%- include("../fragmente/footer.ejs")  %>
+
+    </body>
+</html>

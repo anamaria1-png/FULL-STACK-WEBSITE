@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Magazinul "Cartulia"</title>
+    <meta name="keywords" content="carti, rechizite, penare, ghiozdane, dosare, instrumente de scris, birotica,lei">
+    <meta name="description" content="Magazin de carti, rechizite, birotica si papetarie online">
+    <%- include("../fragmente/head.ejs") %>
+</head>
+
+
+<body>
+    <%- include("../fragmente/header.ejs") %>
+
+    
+    <main>
+        <div class="grid-pagina">
+            <section class="prezentare">
+                <h2>Zona 1: prezentare</h2>
+                <h2>Ziua buna, dragi cititori!</h2>
+                <p>Bine ati venit la libraria "Cartulia"!</p>
+                <p>Ai ramas in pana de inspiratie?</p>
+                <p>La noi veti gasi o gama larga de carti, rechizite si papetarie.</p>
+                <p>Sigur vei gasi ceea ce cauti.</p>
+            </section>
+            <section class="tabel">
+                <h2>Zona 2: tabel</h2>
+                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
+                    in
+                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
+                    aliquam.
+                    Aliquam elit sem, sollicitudin ac nibh a, gravida hendrerit sapien. Curabitur vitae pretium erat.
+                </p>
+            </section>
+            <section class="calendar-evenimente">
+                <h2>Zona 3 :calendarul de evenimente</h2>
+                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
+                    in
+                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
+                    aliquam.
+                    
+                </p>
+            </section>
+            <section class="anunturi">
+                <h2>Zona 4: anunturi</h2>
+                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
+                    in
+                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
+                    aliquam.
+                    Aliquam elit sem, sollicitudin ac nibh a, gravida hendrerit sapien. Curabitur vitae pretium erat.
+                </p>
+            </section>
+            <section class="site-server">
+                <h2>Zona 7: pentru date despre site și server</h2>
+                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
+                    in
+                    faucibus.
+                </p>
+            </section>
+
+            <section class="utilizator-statistici">
+                <h2>Zona 6 :pentru date despre utilizator și statistici</h2>
+                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
+                    in
+                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
+                    aliquam.
+                    Aliquam elit sem, sollicitudin ac nibh a, gravida hendrerit sapien. Curabitur vitae pretium erat.
+                </p>
+            </section>
+            <section class="utilizatori-online">
+                <h2>Zona 5: pentru lista de utilizatori online</h2>
+                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
+                    in
+                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
+                    aliquam.
+                    Aliquam elit sem, sollicitudin ac nibh a, gravida hendrerit sapien. Curabitur vitae pretium erat.
+                </p>
+            </section>
+            <section class="continut-etapa-1">
+                <h2>Zona 8 :program</h2>
+                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
+                    in
+                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
+                    aliquam.
+                    Aliquam elit sem, sollicitudin ac nibh a, gravida hendrerit sapien. Curabitur vitae pretium erat.
+                </p>
+
+            </section>
+        </div>
+        <div class="container">
+            <div id="cutie"></div>
+            <table>
+                <caption id="caption">Cele mai vândute produse</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Produs</th>
+                        <th colspan="2">Vânzări</th>
+                        <th rowspan="2">Stoc</th>
+                    </tr>
+                    <tr>
+                        <th>Luna trecută</th>
+                        <th>Luna aceasta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lampa de birou MATRIX</td>
+                        <td>230</td>
+                        <td>150</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Enciclopedie "Istoria civilizatiilor"</td>
+                        <td>80</td>
+                        <td>75.5</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Imprimanta HD</td>
+                        <td>200</td>
+                        <td>300</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Caiete A4</td>
+                        <td>15.40</td>
+                        <td>16.20</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total vânzări:</td>
+                        <td>280</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div id="promotii">
+            <h2><ins>Oferte promotionale</ins></h2>
+            <ol>
+                <!--Continut luat de pe https://www.emag.ro/harry-potter-si-piatra-filosofala-j-k-rowling-9786068620732/pd/DXRMRYBBM/-->
+                <li><b>Carte copii</b> "Harry Poter si Piatra Filosofala";Pret:<s>60</s> <ins>30.50</ins> <b>lei</b>
+                    <ul>
+
+                        <li>Editura:Arthur</li>
+                        <li>Nr pagini:</li>
+                        <li>Gen: fitiune,fantasy</li>
+                        <li>Tip coperta: cartonata</li>
+                        <li>An publicatie:2015</li>
+                    </ul>
+                </li>
+                <!--Continut luat de pe https://www.siscom-papetarie.ro/accesorii-pentru-birou/capsatoare-si-decapsatoare/capsator-noki-s-5-16-coli-negru-dy170001.html?gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8nCwPKTnNBeNl51j1wjORuFkJHpjueLIZzaidJApLf9vgVaSg9BCqsaAuw3EALw_wcB -->
+                <li><b>Birotica</b> Capsator Noki S-5, 16 coli, negru ;Pret:<s>12.90</s> <ins>8.50</ins> <b>lei</b>
+
+                    <ul>
+
+                        <li>Capacitate de capsare: 16 coli</li>
+                        <li>Nr capse utilizate:10</li>
+                        <li>Culoare: negru</li>
+
+                    </ul>
+
+                </li>
+                <!--Continut luat de pe https://www.micostore.ro/caiete-pentru-scoala/caiet-a4-24-x-32-cm-capsat-48-file-metric-calligraphe-8000-clairefontaine.html-->
+                <li><b>Caiete</b> Set 4 bucati A4+; Pret:<s>26.90</s> <ins>18.50</ins> <b>lei</b>
+
+                    <ul>
+
+                        <li>Dimensiune: 24 x 32 cm</li>
+                        <li>Nr. foi: 48 file</li>
+                        <li>Coperta:flexibila, translucida, din polipropilena colorata</li>
+                        <li>Hartie :Clairefontaine, 90 de g</li>
+                    </ul>
+                </li>
+            </ol>
+            </section>
+            <section id="lichidare">
+                <h2><ins>Lichidare de stoc</ins></h2>
+                <dl>
+                    <!--Continut luat de pe https://epantofi.ro/p/rucsac-vans-mn-old-skool-ii-vn0a5khqf431-blkyl?af_click_lookback=1d&af_reengagement_window=7d&af_sub1=cpc&c=_RO_GMC_CSS__main_HP_a&gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8kV7MCiFBXX8_FPtbF_syRD2o_vPQUzri-ebJuEvOm8-xFje_1DjhwaArYqEALw_wcB&is_retargeting=true&pid=google&utm_campaign=_RO_GMC_CSS__main_HP_a&utm_medium=cpc&utm_source=google&cookie_consent=true-->
+                    <dt><b>Ghiozdan</b> VANS Mn Old Skool II , negru.</dt>
+                    <dd>Au mai ramas:6 bucati.</dd>
+                    <!--https://carturesti.ro/genti-ghiozdane/penar-matematic-1966554249?gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8n7CsDy1ijWpkLYwGWrhVyA18bGXnlilhx_9Ep1y90KzXXi-An9jIwaAksyEALw_wcB-->
+                    <dt><b>Penar</b> cu un singur fermoar,negru, model alb,universal.</dt>
+                    <dd>Au mai ramas:3 bucati.</dd>
+                    <!--https://www.contrastmarket.ro/set-120-creioane-colorate-in-cutie-metalica-nassau-fine-art/?gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8kNBupplUnTN1clJ4asu3Q8F2b9xHXiWerwq_el-jL64LNGBvSOd3waAi3wEALw_wcB-->
+                    <dt><b>Instrumente de scris</b> Set 120 creioane colorate,cutie metalica Nassau Fine Art, 3 nivele,
+                        numerotate pe nuante.</dt>
+                    <dd>Au mai ramas: 2 bucati.</dd>
+                    <!--https://carturesti.ro/accesorii-de-birou/dosar-4-ring-binder-100-sheets-the-little-prince-1558818093?2pau=a7c80ffd2&2ptt=quicklink&2ptu=07b5f0fed&2pdlst=Cj0KCQiA6fafBhC1ARIsAIJjL8mUdQ7xVBTS71HYhU6lRtlqcI0igGv41_XuCIob_m6crLPwzzxFde0aAvzNEALw_wcB&utm_campaign=2Performant&utm_source=&utm_medium=CPS&utm_campaign=2Performant&utm_source=a7c80ffd2&utm_medium=CPS&2pau=a7c80ffd2&2ptt=quicklink&2ptu=07b5f0fed&2prp=UU4RHNkZYtdfLWhlB0ehMVyb2UTQFKLPz9rFb4DxWdCZbXTR78sin-JRNmScuJntEAwG3T6EpYJgxiGW7611WD_40JylZzzpmkReC790bXvut_CYzlgISpvQz1zLpfaS4ZF276N1D-JcwfitJxI0w9QrdgjeZck_-WpPtO6Nyg08Skgp7C2ydwtrR9LsVnKG5UkS9zagn5TWOklBXH-YlE_NzuZONI16vu86GT9RQTA&2pdlst=-->
+                    <dt><b>Dosare</b> Dosar - 4 Ring Binder 100 Sheets - The Little Prince, carton, albastru.</dt>
+                    <dd>Au mai ramas: 10 bucati.</dd>
+                    <!--Continut luat de pe https://www.litera.ro/mensa-teste-de-cultura-generala-->
+                    <dt><b>Carte non-fictiune</b> MENSA.Teste de cultura generala.288 pagini, coperta brosata.
+                    </dt>
+                    <dd>Au mai ramas: 12 bucati.</dd>
+                </dl>
+        </div>
+        <div id="produse_noi">
+            <h2><ins>Noutati</ins></h2>
+            <section>
+                <p>
+                    Ip: <%- locals.ip %>
+                </p>
+                <h3><b>Carti </b> in engleza</h3>
+                <ol>
+
+                    <!--Continut luat de pe https:https://www.libris.ro/it-ends-with-us-BRT9781471156267--p1052164.html-->
+                    <li><b>Carte </b> <b> engleza: </b> "It ends with us"
+                        <ul>
+                            <li>Autor: Coleen Hoover</li>
+                            <li>Nr. pagini: 384</li>
+                            <li>Editura: SIMON & SCHUSTER</li>
+                            <li>Gen: Romance, Drama</li>
+                        </ul>
+
+                    </li>
+                    <!--Continut luat de pe https://www.libris.ro/from-lukov-with-love-mariana-zapata-BRT9780990429272--p15019083.html-->
+                    <li><b>Carte</b> <b>engleza :</b> "From Lukov with love"
+                        <ul>
+                            <li>Autor: Mariana Zapata</li>
+                            <li>Nr. pagini: 538</li>
+                            <li>Editura: Mariana Zapata</li>
+                            <li>Gen: Contemporary</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3><b>Carti </b> non-fictiune</h3>
+                <ol>
+
+                    <!--https://bookzone.ro/carte/revolutia-emotiilor-leonard-mlodinow-bkz-->
+                    <li><b>Carte </b> <b> non-fictiune: </b> "Revolutia emotiilor"
+                        <ul>
+                            <li>Autor:Leonard Mlodinow</li>
+                            <li>Nr. pagini: 304</li>
+                            <li>Editura: Bookzone</li>
+                            <li>Gen: Self-help, dezvoltare persoanala</li>
+                        </ul>
+
+                    </li>
+                    <!--Continut luat de pe https://bookzone.ro/carte/pachet-drumul-spre-sanatate-bkz-->
+                    <li><b>Carte</b> <b>non-fictiune :</b> " Pachet. Drumul spre sanatate"
+                        <ul>
+                            <li>Autor: Constantin Dulcan, Dr.Alexandru Ciurea,Florentina Fântânaru</li>
+                            <li>Nr. pagini: 272</li>
+                            <li>Editura: Bookzone</li>
+                            <li>Gen: Sanatate</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>Puteti sa va faceti o prima impresie a cartile noastre, accesand <i lang="en">reiew-uri</i> sau <i lang="en">trailere</i> precum:</p>
+                <div class="iframe">
+                    <iframe class="responsive-iframe" id="video" name="iframe_carti" src="https://www.youtube.com/embed/fMxUfVMOq54"></iframe>
+                </div>
+                <div class="flex-box">
+                    <a href="https://www.youtube.com/watch?v=FJ_KfnH7hzQ" id=" video"target="carte_engleza"
+                        class="iframe-button">Trailer "It
+                        ends with
+                        us" de Coleen Hoover</a>
+                <a href="https://www.youtube.com/watch?v=PHB3enlOORc" id=" video"target="carte_engleza"
+                        class="iframe-button">Review "Pride and Prejudice" de Jane Austen</a>
+                <a href="https://youtu.be/N5DG0x0OxYY" id=" video"target="carte_engleza"
+                        class="iframe-button"> Newest 2023 books from the fiction category</a>
+                 </div>
+                <!--<div class="flex-box">
+                   <div class="iframe">
+                        <iframe class="responsive-iframe" id="video-prima-pagina" id="iframe-carti" name="iframe_carti" src="https://www.youtube.com/embed/fMxUfVMOq54"></iframe>
+                    </div>
+                    <p><a href="https://www.youtube.com/watch?v=FJ_KfnH7hzQ" target="carte_engleza"
+                            class="iframe-button">Trailer "It
+                            ends with
+                            us" de Coleen Hoover</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=PHB3enlOORc" target="carte_engleza"
+                            class="iframe-button">Review "Pride and Prejudice" de Jane Austen</a></p>
+                    <p><a href="https://youtu.be/N5DG0x0OxYY" target="carte_engleza"
+                            class="iframe-button"> Newest 2023 books from the fiction category</a></p>
+        
+                </div>-->
+                <!--<div class="iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fMxUfVMOq54"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>-->
+                
+                <p>Lista cu <b>top 100 carti</b> de <b>fictiune</b>
+                    <a href="https://foxi.ro/articol/top-carti-celebre" target="_blank"></a>
+                </p>
+            </section>
+        </div>
+        <div id="informatii">
+            <h2><ins>Informatii</ins></h2>
+            <details>
+                <summary>Despre noi</summary>
+                <p>Magazinul "Cartulia" isi propune sa ofere o gama larga de produse atat pentru elevi si studenti, cat
+                    si pentru oamenii pasionati de <i lang="en">arta</i> si <i lang="en">carti</i></p>
+                <aside>
+                    <p>De ce "Cartulia"? Deoarece librarii nostri sunt pasionati de ceea ce inglobeaza cultura, iar
+                        specificul magazinului nostru a satisfae orice nevoie de acest tip.</p>
+                </aside>
+                <p>Suntem o echipa tanara si dornica sa va asistam in alegerea unei carti de <b>fictiune</b> sau
+                    <b>nonfictiune</b> , unor rechizite precum <b>penare</b> sau a unor instrumente de scirs precum
+                    <b>stilouri</b> potriit nevoilor dumneavoastra.
+                </p>
+                <p>De asemenea, la noi veti gasi o gama variata de accesorii precum: <b>dosare </b>, <b>ghiozdane</b>,
+                    <b>semne de carte</b> sau <b> capsatoare</b>.
+                </p>
+                <p>Magazinul "Cartulia"<abbr title="Societate cu raspundere limitata">SRL</abbr>, <abbr
+                        title="Cod unic de inregistrare">CUI</abbr> 123</p>
+            </details>
+            <details>
+                <summary>Cum comand?</summary>
+                <p>Este usor! Tot ceea ce trebuie sa faceti este sa va selectati produsele favorite!</p>
+                <p>Acestea trebuie introduse in cosul de cumparaturi cu ajutorul butonului "comanda"</p>
+                <p>Istoricul comenzilor poate fi accesat prin crearea unui cont online </p>
+                <p>Acesta se va utiliza automat pentru livrare la adresa introdusa de duneavoastra in contul creat.</p>
+                <p><strong>Atentie!</strong>Produsele se pot comanda si fara a crea cont in prealabil in magazinul
+                    online, insa trebuie
+                    sa se introduca adresa de livrare.</p>
+            </details>
+            <details>
+                <summary>Cum returnez produse?</summary>
+                <p>Este necesara crearea unui cont online. In cadrul acestuia, veti regasi un formular pentru returnare
+                    produse, pe care trebuie ss il completati</p>
+                <p>Produsul trebuie returnat in primele 14 zile dupa data de cumparare a acestuia</p>
+                <p>Motivul de retur se va preciza in formular. Produsul trebuie sa nu prezinte semne de uzare si sa fie
+                    ambalat in ambalajul original, impreuna cu chitanta de cumparare/ factura.</p>
+            </details>
+            <details>
+                <summary>Garantia</summary>
+                <p>Perioada de garanție este specificată în certificatul de garanție al fiecărui produs, emis de
+                    producator.</p>
+                <p>In virtuatea acestui fapt in cazul in care un produs se va deteriora sau va functiona incorect si
+                    inca
+                    se afla in perioada de garantie, acesta poate fi returnat sau inlocuit la sediul magazinului nostru.
+                </p>
+            </details>
+            <a href="./resurse/imagini/index3.jpg" class="link" download>Click aici pentru o cartulie!</a>
+            <video id="video-vtt"controls poster="resurse/imagini/index3.jpg"  preload="auto">
+                <source src="/resurse/videouri/librarie.mp4" type="video/mp4">
+                <source src="/resurse/videouri/librarie.ogv" type="video/ogv">
+                <track default src="/resurse/videouri/tracks/sub_ro.vtt" kind="captions" srclang="ro" label="romana"/>
+                <track src="/resurse/videouri/tracks/sub_eng.vtt" kind="captions" srclang="en" label="engleza"/>
+            </video>
+              
+            <!--<figure>
+					<picture>
+						<source media="(max-width:600px)" srcset="./resurse/imagini/index2.jpg">
+						<source media="(max-width:1000px)" srcset="./resurse/imagini/index3.jpg">
+						<img src="./resurse/imagini/index.jpg" alt="Imaginea de fundal a site-ului">
+					</picture>
+					<img src="./resurse/imagini/index2.jpg" alt="imagine-sigla"
+						title="Poarta catre toate produsele de librarie" />
+					<figcaption>
+						Lumea magica a cartilor!
+						</figcaption>
+				</figure>-->
+                <section id="galerie-statica"><div id="grid-galerie">
+                    <% for (let imag of locals.imagini) { 
+                       d=new Date();
+                       var v_luni=["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+                       if(imag.luni && imag.luni.includes(v_luni[d.getMonth()])){
+                       %>
+                            <figure>
+                                <picture>
+                                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
+                                    <img src="<%- imag.fisier %>" alt="imagine">
+                                </picture>
+                                <figcaption><%- imag.descriere %></figcaption>
+                            </figure>
+                <%} %>
+                
+                    <% }  %>
+                </div>
+            </section>
+                
+            <figure>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./Resurse/Imagini/index3.jpg" id="img">
+                    <source media="(max-width: 1000px)" srcset="./Resurse/Imagini/index2.jpg" id="img">
+                    <img src="./Resurse/Imagini/index.jpg" id="img" alt="imagine-sigla" title="Poarta catre libraria noastra!">
+                </picture>
+                <figcaption>Universul produselor noastre!</figcaption>
+            </figure>
+        </div>
+        <div style="display:block">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow class="promotie">
+                  <mtext>Pentru clientii abonati la newsletter, o promotie de 10% se va adauga pentru fiecare produs cumparat!</mtext>
+                </mrow>
+              
+                <mrow class="pret1">
+                  <mtext>Pretul cu reducerea aplicata:</mtext>
+                  <mo>=</mo>
+                  <msub>
+                    <mi>p</mi>
+                    <mi>r</mi>
+                  </msub>
+                  <mo>-</mo>
+                  <mfrac>
+                    <mn>10</mn>
+                    <mn>100</mn>
+                  </mfrac>
+                  <mo>&#x00D7;</mo>
+                  <msub>
+                    <mi>p</mi>
+                    <mi>r</mi>
+                  </msub>
+                </mrow>
+              
+                <mrow class="formula">
+                  <mtext>unde:</mtext>
+                </mrow>
+              
+                <mrow class="pret2">
+                  <msub>
+                    <mi>p</mi>
+                    <mi>r</mi>
+                  </msub>
+                  <mo>=</mo>
+                  <mtext>pretul initial al produsului.</mtext>
+                </mrow>
+              </math>
+              
+        </div>
+     
+    </main>
+    <%- include("../fragmente/footer.ejs") %>
+  
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+body {
+    --inaltime-meniu: 3rem;
+}
+nav {
+    height: var(--inaltime-meniu);
+    width: 100%;
+    top: 0;
+    padding: 0;
+    background: var(--mov);
+    z-index: 10;
+    position: sticky;
+}
+#ac{ padding-left: 49%;
+    text-align: left;
+}
+#acasa{
+    display: none;
+}
+#ac:hover #acasa{
+    display: inline-block;
+}
+nav ul.meniu ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+nav ul.meniu>li {
+    float: left;
+    width: 200px;
+    position: relative;
+}
+nav ul, nav li {
+    padding: 0;
+    margin: 0;
+}
+nav ul.meniu li {
+    text-align: center;
+    list-style-type: none;
+    background: var(--mov);
+    cursor: pointer;
+}
+nav ul.meniu li a, nav ul.meniu li div {
+    text-decoration: none;
+    color: var(--roz);
+    display: block;
+    font-weight: bold;
+    position: relative;
+    height: var(--inaltime-meniu);
+    line-height: var(--inaltime-meniu);
+   
+}
+/*nav ul.meniu li {
+    @include meniu-item(var(--mov), var(--mov-inchis));
+    cursor: pointer;
+  }
+  
+  nav ul.meniu li a {
+    @include meniu-item(var(--mov), var(--mov-inchis));
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    height: var(--inaltime-meniu);
+    line-height: var(--inaltime-meniu);
+  }*/
+  
+nav ul.meniu>li:hover>ul {
+    display: block;
+    animation-name: aparitie_meniu;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    transform-origin: 0 0;
+}
+ul.meniu ul a::before, ul.meniu ul a::after {
+    content: " ";
+    width: 5px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    transition: height linear 0.5s;
+}
+ul.meniu ul a:hover::before, ul.meniu ul a:hover::after {
+    height: 100%;
+}
+ul.meniu ul a::before {
+    left: 0;
+    background: linear-gradient(to right, var(--negru), var(--roz));
+}
+ul.meniu ul a::after {
+    right: 0;
+    background: linear-gradient(to left, var(--negru), var(--roz));
+}
+nav ul.meniu li a:hover, nav ul.meniu li div:hover {
+    color: var(--roz-inchis);
+    transition: color 0.5s ease;
+    }
+@keyframes aparitie_meniu {
+    0% {
+        transform: scale(0);
+        transform-origin: 50% 0%;
+      }
+      100% {
+        transform: scale(1);
+        transform-origin: 50% 0%;
+      }
+
+}
+
+nav ul.meniu>li>div {
+    transition: font-size 1s;
+}
+nav ul.meniu>li>div:hover {
+    color:var(--roz-inchis)
+}
+#hamburger {
+    display: none;
+}
+#checkbox-meniu {
+    display: none;
+}
