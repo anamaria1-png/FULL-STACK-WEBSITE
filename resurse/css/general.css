@@ -1,25 +1,4 @@
 
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -506,4 +485,356 @@ main {
       ::cue(i) {
         font-style: italic;
       }
+      /*
+      .text-container {
+        width: 200px;
+        max-height: 2em;
+        overflow: hidden;
+      }
       
+      .scrolling-text {
+        display: block;
+        animation: scroll 10s linear infinite;
+      }
+      
+      @keyframes scroll {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(-100%);
+        }
+      }
+      body {
+        background-image: url('index.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        animation: changeBackground 3s infinite;
+      }
+      
+      @keyframes changeBackground {
+        0% {
+          background-image: url('index.jpg');
+        }
+        50% {
+          background-image: url('index2.jpg');
+        }
+        100% {
+          background-image: url('index3.jpg');
+        }
+      }
+            
+
+      #imagine{
+        position:relative;
+        background-image:url("index.jpg");
+        background-size:cover;
+        width:500px; 
+        height: 500px;
+        filter:brightness(200%) grayscale(0) ;
+        transition:all 2s linear;
+      }
+      
+      #imagine:after, #imagine:before{
+        content:" ";
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        
+        transition:all 2s linear;
+      }
+      
+      #imagine:after{
+        background-color:rgb(0,0,255);
+        mix-blend-mode:lighten;
+      }
+      
+      #imagine:before{
+        background-color:rgb(205,0,255);
+        mix-blend-mode:darken;
+      }
+     
+    
+      .container {
+        position: relative;
+        width: 400px;
+        height: 200px;
+      }
+      
+      /*.reflected-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100px;
+      }
+      
+      .cover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      
+      #text-reflectat {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transform-origin: 0 0;
+        transform: rotateX(180deg) skew(-45deg) scaleY(0.5) translate(10px, -25px); 
+        opacity: 0.55;
+        z-index: 1;
+      }
+      
+      .reflected-text-right {
+        transform: translate(100%, -50%) rotateY(180deg);
+      }*/
+      /*.container2 {
+  position: relative;
+  margin-left:30px;
+}
+
+.reflected-text {
+  position: absolute;
+  left: 0;
+
+  transform-origin: 0 20px;
+  transform: skew(-45deg) scaleY(0.5);
+}
+
+.reflected-text-right {
+ 
+  left: 25px;
+  right: 0;
+  transform: skew(45deg) rotateX(180deg)  scaleY(0.5);
+}
+
+.cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#text-reflectat {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform-origin: 0 0;
+  transform: scaleY(2);
+  opacity: 0.55;
+  z-index: 1;
+}
+.reflected-text:hover #text-reflectat {
+        color: red;
+      }
+      .custom-hr {
+        border: none;
+        height: 8px;
+        background-color: #F5A623;
+        background-image: radial-gradient(circle at 50% 0, var(--albastru), transparent 70%);
+        position: relative;
+      }
+      
+      .custom-hr::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+        background-image: url('https://example.com/image.png');
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+      }*/
+      
+      
+      hr {
+        height: 20px;
+        
+        background-image: linear-gradient(45deg, var(--mov) 10%, transparent 10%, transparent 20%, var(--mov) 20%, var(--mov)80%, transparent 60%, transparent 90%, var(--mov)90%);
+        border: 80px;
+        margin: 20px 0;
+      }
+
+      /*.container {
+        position: relative;
+        width: fit-content;
+      }
+      
+      .reflection {
+        
+        position: relative;
+        border-right: 10px;
+        transform: scaleY(-1);
+        
+        color: rgba(0, 0, 0, 1);
+      }
+      
+      .container:hover h1 {
+        color: var(--albastru);
+      }
+      
+      .container:hover .reflection {
+        color: var(--albastru);
+      }*/
+      #cont {
+        display: flex;
+        justify-content: center;
+        border: 2px solid #00000000;
+        top:10%;
+       
+    }
+
+    #cont:hover {
+      animation: 7s multicolor;
+  }
+  @keyframes multicolor {
+      0% {
+          color: #000;
+      }
+      40% {
+          color: var(--roz-inchis);
+      }
+      100% {
+          color: var(--albastru);
+      }
+      
+  }
+  
+    
+    #textref{
+      /*position:absolute;
+      left: 1rem;
+      bottom: -0.5rem;
+      transform-origin: bottom right;
+      opacity: 0.5;
+      transition: color 0.3s ease-in-out;*/
+      
+        transform: scaleX(-1) rotateX(30deg) rotateY(-45deg);
+    
+    }
+    
+    #textcarte
+   {
+      /*position: relative;
+        left:25%;
+        top:-35%;
+      transition: color 0.3s ease-in-out;
+        width: 100%;*/
+        
+        transform: rotateX(-30deg) rotateY(45deg);
+    
+    }
+      
+    #cont:hover{
+    color:#800080;
+    }
+
+    /*.ref:hover h1 {
+      transition: color 0.3s ease-in-out;
+      color: var(--albastru);
+    }
+    
+    .ref:hover .reflection {
+      transition: color 0.3s ease-in-out;
+      color: var(--albastru);
+    }*/
+
+      .container2 {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .text {
+        animation: scroll 10s linear infinite;
+        white-space: nowrap;
+        font-size: 24px;
+        display: inline-block;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--albastru);
+    }
+    th {
+      background-color: var(--roz);
+    }
+    @media only screen and (max-width: 600px) {
+      table {
+        border: 0;
+      }
+      thead {
+        display: none;
+      }
+      tbody tr {
+        display: block;
+        margin-bottom: 10px;
+      }
+      td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ddd;
+      }
+      td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+      }
+    }
+
+    .text-column {
+      /* setăm numărul de coloane */
+      column-count: 2;
+    
+      /* setăm lățimea și stilul liniei despărțitoare */
+      column-rule: 1px solid black;
+    
+      /* setăm spațiul între linia despărțitoare și text */
+      column-gap: 20px;
+    
+      /* evităm orice fragmentare a cuvintelor între coloane */
+      break-inside: avoid;
+    }
+    
+    /* Definim variabile pentru schema cromatică */
+:root {
+  --main-color: #3498db;
+  --background-color: green;
+  --text-color: yellow;
+}
+
+/* Aplicăm stiluri pentru textul selectat */
+::selection {
+  background-color: var(--main-color); /* Schimbăm culoarea de fundal */
+  color: var(--background-color); /* Schimbăm culoarea textului */
+  text-shadow: 1px 1px var(--text-color); /* Adăugăm un umbre textului */
+}

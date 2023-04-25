@@ -2,38 +2,65 @@
 	"cale_galerie":"resurse/imagini/galerie",
     "imagini": [
     {
-        "fisier":"briose-frisca.png",
-        "descriere":"Brioșe",
-        "luni":["martie","februarie","noiembrie"]
+        "cale_fisier":"SF.jpeg",
+        "titlu":"SF",
+        "alt":"SF",
+        "luni":["ianuarie","februarie","iunie"]
     },
     {
-        "fisier":"clatite.png",
-        "descriere":"Clătite cu dulceață",
+        "cale_fisier":"creioane-colorate.jpeg",
+        "titlu":"Creioane colorate",
+        "alt":"creioane colorate",
         "luni":["ianuarie","februarie","iunie"]
         
     },
     {
-        "fisier":"gogosi.png",
-        "descriere":"Gogoși glazurate",
-        "luni":["ianuarie","noiembrie","iunie","martie","aprilie"]
+        "cale_fisier":"fantasy.jpeg",
+        "titlu":"fantasy",
+        "alt":"Fantasy",
+        "luni":["ianuarie","noiembrie","iunie"]
     },
     {
-        "fisier":"tort-scortisoara.png",
-        "descriere":"Tort cu scorțisoară",
-        
-        "luni":["noiembrie","aprilie"]
+        "cale_fisier":"pixuri.jpeg",
+        "titlu":"Pixuri",
+        "alt":"pixuri",
+        "luni":["ianuarie","februarie","iunie"]
     },
     {
-        "fisier":"prajitura-ciocolata.png",
-        "descriere":"Prăjitură cu ciocolată"
+        "cale_fisier":"mapa.jpeg",
+        "titlu":"Mapa",
+        "alt":"mapa",
+        "luni":["ianuarie","februarie","iunie"]
     },
     {
-        "fisier":"tarta-afine.png",
-        "descriere":"Tartă cu afine"
+        "cale_fisier":"drama.jpeg",
+        "descriere":"Drama",
+        "titlu":"drama",
+        "luni":["ianuarie","februarie","iunie"]
     },
     {
-        "fisier":"tort-trandafiri.png",
-        "descriere":"Tort special"
+        "cale_fisier":"romance.jpeg",
+        "titlu":"romance",
+        "alt":"romance",
+        "luni":["ianuarie","februarie","iunie"]
+    },
+    {
+        "cale_fisier":"non-fictiune.jpeg",
+        "titlu":"Non-fictiune",
+        "alt":"non-fictiune",
+        "luni":["ianuarie","februarie","iunie"]
+    },
+    {
+        "cale_fisier":"enciclopedie.jpeg",
+        "titlu":"Enciclopedie",
+        "alt":"enciclopedie",
+        "luni":["ianuarie","februarie","iunie"]
+    },
+    {
+        "cale_fisier":"istorie.jpeg",
+        "titlu":"Istorie",
+        "alt":"istorie",
+        "luni":["ianuarie","februarie","iunie"]
     }
 ]
 }

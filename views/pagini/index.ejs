@@ -6,48 +6,78 @@
     <meta name="description" content="Magazin de carti, rechizite, birotica si papetarie online">
     <%- include("../fragmente/head.ejs") %>
 </head>
-
+<!--modificare grid breakpoints si container max width pt dimensiuni-->
 
 <body>
     <%- include("../fragmente/header.ejs") %>
 
     
     <main>
+
+      
+        <button class="btn btn-primary my-btn">ceva</button>
         <div class="grid-pagina">
             <section class="prezentare">
                 <h2>Zona 1: prezentare</h2>
                 <h2>Ziua buna, dragi cititori!</h2>
-                <p>Bine ati venit la libraria "Cartulia"!</p>
-                <p>Ai ramas in pana de inspiratie?</p>
-                <p>La noi veti gasi o gama larga de carti, rechizite si papetarie.</p>
-                <p>Sigur vei gasi ceea ce cauti.</p>
+                <div class="text-column">
+                    <p>Bine ati venit la libraria "Cartulia"!</p>
+                    <p>Ai ramas in pana de inspiratie?</p>
+                    <p>La noi veti gasi o gama larga de carti, rechizite si papetarie.</p>
+                    <p>Sigur vei gasi ceea ce cauti.</p>
+                  </div>
+              
             </section>
             <section class="tabel">
                 <h2>Zona 2: tabel</h2>
-                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
-                    in
-                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
-                    aliquam.
-                    Aliquam elit sem, sollicitudin ac nibh a, gravida hendrerit sapien. Curabitur vitae pretium erat.
+                <p><div class="table-container">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Cartile de autori romani</th>
+                          <th>Carti de autori straini</th>
+                          <th>Carti traduse</th>
+                          <th>Coloana de autori contemporani</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Adam si Eva</td>
+                          <td>Mandrie si prejudecata</td>
+                          <td>Zbor deasupra unui cuib de cuci</td>
+                          <td>Iona</td>
+                        </tr>
+                        <tr>
+                          <td>Enigma Otiliei</td>
+                          <td>Capitan la 15 ani</td>
+                          <td> Acolo unde canta racii</td>
+                          <td>Femei</td>
+                        </tr>
+                        <tr>
+                          <td>Ion</td>
+                          <td>Wuthering Heights</td>
+                          <td>Fata din tren</td>
+                          <td>Scrisoare catre tata</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </p>
             </section>
             <section class="calendar-evenimente">
                 <h2>Zona 3 :calendarul de evenimente</h2>
-                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
-                    in
-                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
-                    aliquam.
-                    
-                </p>
+                <p>De 1 iunie,intre orele 10.00- 16.00,organizam pentru copii o seara speciala,  in care se vor citi povesti si colora carti pentru copii.</p>
+                <p> In fiecare inceput de luna de vara,se va organiza eveniment muzical cu trupe locale, intre orele 19.00-22.00</p>   
+            
             </section>
             <section class="anunturi">
                 <h2>Zona 4: anunturi</h2>
-                <p>Donec dignissim lacus quis dolor placerat sodales. Interdum et malesuada fames ac ante ipsum primis
-                    in
-                    faucibus. Ut tincidunt nunc sit amet scelerisque luctus. Pellentesque vel arcu at libero porta
-                    aliquam.
-                    Aliquam elit sem, sollicitudin ac nibh a, gravida hendrerit sapien. Curabitur vitae pretium erat.
-                </p>
+                <p>In fiecare marti, puteti aduce carti uzate si la fiecare 2 carti aduse, primiti una noua!</p>
+                <p>Sambata, duminica si vineri, libraria functioneaza dupra program scurtat.</p>
+                <p>In zilele de sarbatoare legala, libraria este inchisa.</p>
+                <p>Miercuri, 24.10.2023, libraria va fi inchisa din motive de dezinsectie.</p>
+                <p>In luna octombrie, vom organiza donatii de carte pentru centrul de varstinici si copii fara adapost</p>
+                <p>Pentru mai multe detalii, sunati la numarul de telefon afisat.</p>
             </section>
             <section class="site-server">
                 <h2>Zona 7: pentru date despre site și server</h2>
@@ -86,10 +116,15 @@
 
             </section>
         </div>
+        
+      
+          
+          
         <div class="container">
             <div id="cutie"></div>
             <table>
                 <caption id="caption">Cele mai vândute produse</caption>
+             
                 <thead>
                     <tr>
                         <th rowspan="2">Produs</th>
@@ -250,6 +285,7 @@
                     </li>
                 </ol>
 
+                  <br>
                 <p>Puteti sa va faceti o prima impresie a cartile noastre, accesand <i lang="en">reiew-uri</i> sau <i lang="en">trailere</i> precum:</p>
                 <div class="iframe">
                     <iframe class="responsive-iframe" id="video" name="iframe_carti" src="https://www.youtube.com/embed/fMxUfVMOq54"></iframe>
@@ -288,10 +324,11 @@
                 <p>Lista cu <b>top 100 carti</b> de <b>fictiune</b>
                     <a href="https://foxi.ro/articol/top-carti-celebre" target="_blank"></a>
                 </p>
-            </section>
+               
+        </section>
         </div>
         <div id="informatii">
-            <h2><ins>Informatii</ins></h2>
+            <h2 id="text"><ins>Informatii</ins></h2>
             <details>
                 <summary>Despre noi</summary>
                 <p>Magazinul "Cartulia" isi propune sa ofere o gama larga de produse atat pentru elevi si studenti, cat
@@ -357,25 +394,44 @@
 						Lumea magica a cartilor!
 						</figcaption>
 				</figure>-->
+               
                 <section id="galerie-statica"><div id="grid-galerie">
-                    <% for (let imag of locals.imagini) { 
+                    <%
+                    let i = 0;
+                    let j = 0; 
+                    let nr = 0;
+                    for (let imag of locals.imagini) { 
                        d=new Date();
-                       var v_luni=["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
-                       if(imag.luni && imag.luni.includes(v_luni[d.getMonth()])){
+                       var v_luni=["ianuarie","februarie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"];
+                       if(imag.luni && imag.luni.includes("ianuarie")){
+                        nr++;
+                        if(nr == 12) {break;}
                        %>
                             <figure>
                                 <picture>
-                                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
-                                    <img src="<%- imag.fisier %>" alt="imagine">
+                                    <source media="(max-width:500px)" srcset="<%-imag.mic%>">
+                                    <source media="(max-width:1000px)" srcset="<%-imag.mic%>">
+                                    <img src="<%-imag.mare%>" alt="<%- imag.alt %>">
                                 </picture>
-                                <figcaption><%- imag.descriere %></figcaption>
+                                <figcaption class="galerie-statica"><%- imag.titlu %></figcaption>
                             </figure>
                 <%} %>
                 
                     <% }  %>
+                <div class="spatiu-gol" id="spatiu1"></div>
+                <div class="spatiu-gol" id="spatiu2"></div>
+                <div class="spatiu-gol" id="spatiu3"></div>
+                <div class="spatiu-gol" id="spatiu4"></div>
+                <div class="spatiu-gol" id="spatiu5"></div>
+                <div class="spatiu-gol" id="spatiu6"></div>
+                <div class="spatiu-gol" id="spatiu7"></div>
+                <div class="spatiu-gol" id="spatiu8"></div>
+                <div class="spatiu-gol" id="spatiu9"></div>
+                <div class="spatiu-gol" id="spatiu10"></div>
+                <div class="spatiu-gol" id="spatiu11"></div>
+                <div class="spatiu-gol" id="spatiu12"></div>
                 </div>
             </section>
-                
             <figure>
                 <picture>
                     <source media="(max-width: 600px)" srcset="./Resurse/Imagini/index3.jpg" id="img">
@@ -385,6 +441,30 @@
                 <figcaption>Universul produselor noastre!</figcaption>
             </figure>
         </div>
+        <hr class="hr">
+     
+          
+      
+
+          <div class="container2">
+            <div class="text">
+                In fiecare luni si vineri, pachete de 2+1 carti gratis!
+            </div>
+        </div>
+        <br>
+        <section class="ref">
+            <div id = "cont">
+                <div id = "textcarte">
+                    Carte
+                </div>
+            <div id = "textref">
+                    Carte
+                </div>
+            </div>
+        </section>
+       
+        <br>
+      
         <div style="display:block">
             <math xmlns="http://www.w3.org/1998/Math/MathML">
                 <mrow class="promotie">
@@ -425,7 +505,10 @@
               </math>
               
         </div>
+        
      
+          
+           
     </main>
     <%- include("../fragmente/footer.ejs") %>
   

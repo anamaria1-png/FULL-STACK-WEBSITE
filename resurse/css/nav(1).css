@@ -1,0 +1,127 @@
+#hamburger {
+  display: none;
+}
+
+#ch-menu {
+  display: none;
+}
+
+body {
+  --inaltime-meniu: 60px;
+  --latime-buton: 200px;
+  --culoare-meniu: var(--culoare-mov2);
+  --culoare-border-buton: black;
+}
+
+nav {
+  --text-meniu: black;
+  background-color: var(--culoare-meniu);
+  width: calc(100vw - 18px);
+  height: var(--inaltime-meniu);
+  position: sticky;
+  top: 0;
+  margin-left: calc(-1 * var(--spatiere-pagina));
+  z-index: 1;
+}
+
+ul.menius {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+ul.menius ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  opacity: 0;
+  transition: all 0.5s linear;
+  transform: scaleY(0);
+  transform-origin: top;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+ul.menius li {
+  width: var(--latime-buton);
+  height: var(--inaltime-meniu);
+  background-color: var(--culoare-meniu);
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.3 linear;
+  box-sizing: border-box;
+  position: relative;
+}
+
+ul.menius li:hover {
+  overflow: visible;
+  background-color: var(--culoare-mov-f-desc);
+  transition: background-color 0.3s linear;
+}
+
+ul.menius li:hover ul {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+ul.menius li:hover a {
+  color: var(--text-meniu);
+  transition: all 0.3s linear;
+}
+
+ul.menius li:hover div {
+  text-shadow: 0px 0px 0px black;
+  transition: text-shadow 1s ease-in-out;
+}
+
+ul.menius li div {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: var(--text-meniu);
+  text-decoration: none;
+  font-weight: bold;
+  line-height: var(--inaltime-meniu);
+  position: relative;
+  text-shadow: 0px -18px 0px transparent;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+ul.menius li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: var(--text-meniu);
+  text-decoration: none;
+  font-weight: bold;
+  line-height: var(--inaltime-meniu);
+  position: relative;
+}
+
+ul.menius > li {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: var(--latime-buton);
+}
+
+ul.menius a:hover {
+  text-decoration: underline;
+}
+
+.fas.fa-utensils.fa-shake {
+  z-index: 0;
+}
+
+#autentificare a {
+  text-decoration: none;
+}
+
+#acasa-mediu {
+  display: none;
+}
+

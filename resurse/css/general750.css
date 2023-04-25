@@ -25,3 +25,17 @@ body {
     margin: var(--margin-mobile);
   }
 
+  .text-column {
+    /* setăm numărul de coloane */
+    column-count: 1;
+  
+    /* setăm lățimea și stilul liniei despărțitoare */
+    column-rule: 1px solid black;
+  
+    /* setăm spațiul între linia despărțitoare și text */
+    column-gap: 20px;
+  
+    /* evităm orice fragmentare a cuvintelor între coloane */
+    break-inside: avoid;
+  }
+  
